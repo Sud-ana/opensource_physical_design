@@ -97,6 +97,13 @@ This is a repository to share learnings from the extensive and exhaustive worksh
   - [OpenLANE Build Scripts](https://github.com/nickson-jose/openlane_build_script) - Install all required OpenROAD and some supporting tools
   
 # Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK
+Superconsise list:
+* docker
+* ./flow.tcl -interactive
+* package require openlane 0.9
+* prep -design picorv32a
+* run_synthesis
+* 
  ## Basic IC Design Terminologies
   During the Physical Designing, one will come across multiple terminologies that are frequently used. Some of them are mentioned below:
   - Package: It is a case that surrounds the circuit material to protect it from physical damage or corrosion and allow mounting of the electrical contacts connecting it to the printed circuit board (PCB). The below snippet shows an IC with 48 pins and Quad Flat No-Leads(QFN) package.
@@ -142,16 +149,19 @@ Designs running through openlane are extracted from the /designs directory. We c
 <img src="Screenshot/L2_directory_structure.png">
     
 Key files generated from preparation phase: 
-      - merged.lef file has the lef information created under runs directory.
-      - reults (results)
-      - reports (timing analysis stc file )
-      - log (log for each and every step)
-      - config.tcl (This shows what all default parameters are taken by the run. So this will reflect any changes made on the fly on the original configuration file)
-      - cmd.log (logs all commands)
+
+      1. merged.lef file has the lef information created under runs directory.
+      2. reults (results)
+      3. reports (timing analysis stc file )
+      4. log (log for each and every step)
+      5. config.tcl (This shows what all default parameters are taken by the run. So this will reflect any changes made on the fly on the original configuration file)
+      6. cmd.log (logs all commands)
 
 <img src="Screenshot/L1_S2_post_design_prep.png">
+
       
 <img src="Screenshot/L1_S3_prep_design_picorv32a.png">
+
 
 ### Design Synthesis and Results
 The first step in OpenLANE flow is RTL Synthesis of the design selected from the designs directory. This is done using the following command.
@@ -166,15 +176,16 @@ The first step in OpenLANE flow is RTL Synthesis of the design selected from the
  <img src="Screenshot/L2_Synthesis_Flop_Ratio.png">  
  <img src="Screenshot/L2_Area.png">  
  
- Flop ratio observed: 10.84%
+ **Flop ratio observed from yosys ( 1-yosys_4.stat.rpt file statistical) log : 1613/14876 : 10.84%**
+ 
  
 The statistics are available in corresponding directories such as synthesis 
  <img src="Screenshot/L4_Synthesis_reports.png">  
  
- The mapping is available in mapping file/synthesized netlist as picorv32a.synthesis.v
+The mapping is available in mapping file/synthesized netlist as picorv32a.synthesis.v
   <img src="Screenshot/L4_mapping_done.png">  
   
-  The STA report is available as 
+The STA report is available as 
   <img src="Screenshot/L4_opensta_timing_report.png">
       
     
