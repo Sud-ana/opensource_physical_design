@@ -149,7 +149,7 @@ Key files generated from preparation phase:
       - config.tcl (This shows what all default parameters are taken by the run. So this will reflect any changes made on the fly on the original configuration file)
       - cmd.log (logs all commands)
 
-<img src="Screenshot/L1_S2_post_design_prep.png.png">
+<img src="Screenshot/L1_S2_post_design_prep.png">
       
 <img src="Screenshot/L1_S3_prep_design_picorv32a.png">
 
@@ -166,8 +166,9 @@ The first step in OpenLANE flow is RTL Synthesis of the design selected from the
  <img src="Screenshot/L2_Synthesis_Flop_Ratio.png">  
  <img src="Screenshot/L2_Area.png">  
  
- Flop ratio observed: 
- The statistics are available in corresponding directories such as synthesis 
+ Flop ratio observed: 10.84%
+ 
+The statistics are available in corresponding directories such as synthesis 
  <img src="Screenshot/L4_Synthesis_reports.png">  
  
  The mapping is available in mapping file/synthesized netlist as picorv32a.synthesis.v
