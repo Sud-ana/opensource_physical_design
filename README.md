@@ -104,3 +104,78 @@ This is a repository to share learnings from the extensive and exhaustive worksh
   - Core: It is the actual area of the IC where the logic resides.
   - Pads: These are the interfaces between the internal signals of a chip and the external pins
 
+
+
+
+ ## Open-Source EDA Tools
+ ### OpenLANE Initialization
+   For invoking OpenLANE in Linux Ubuntu, we should first run the docker container everytime we use OpenLANE. This is done by using the following script:
+    
+    docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) openlane:rc6
+    
+    
+   However for the workshop, I used the cloud platform and didnot run openlane in containerized docker on my linux WSL. If interested in this flow, you can refer here. 
+    
+   
+   A custom shell script or commands can be generated to make the task simpler.
+   
+   - To invoke OpenLANE run the `./flow.tcl` script.
+   - OpenLANE supports two modes of operation: interactive and autonomous.
+   - To use interactive mode use `-interactive` flag with `./flow.tcl`  
+     - I used the interactive mode to investigate the flow and edit configuration files to understand the influence on the configurations.   
+   
+  <img src="Screenshot/Lab1_entering_environment.jpg">
+  
+  
+   ### Design Preparation
+   The first step after invoking OpenLANE is to import the openlane package of required version. This is done using following command. Here 0.9 is the required version of OpenLANE. This imports all the packages required to run in the flow , so this needs to be done everytime when running the flow.
+   
+    ```package require openlane 0.9 ```
+    
+Designs running through openlane are extracted from the /designs directory. We can use existing design in this folder or create one of our own in this folder. I'm going to use the picorv32a design.  Have the ril in this directory or configure the config.tcl as you can see the sourcefile selected in this file. 
+    
+    Note that the precedence for configuration file values :
+    - Default value in openlane
+    - config.tcl in design
+    - sky130A_fd_sc_hd_config.tcl 
+
+<img src="Screenshot/L2_directory_structure.png">
+    
+Key files generated from preparation phase: 
+      - merged.lef file has the lef information created under runs directory.
+      - reults (results)
+      - reports (timing analysis stc file )
+      - log (log for each and every step)
+      - config.tcl (This shows what all default parameters are taken by the run. So this will reflect any changes made on the fly on the original configuration file)
+      - cmd.log (logs all commands)
+
+<img src="Screenshot/L1_S2_post_design_prep.png.png">
+      
+<img src="Screenshot/L1_S3_prep_design_picorv32a.png">
+
+### Design Synthesis and Results
+The first step in OpenLANE flow is RTL Synthesis of the design selected from the designs directory. This is done using the following command.
+   
+    ```run_synthesis```
+   
+ <img src="Screenshot/L1_S4_Synthesis_Complete.JPG">
+ 
+ Results are populated in the runs folder. 
+ From the synthesis you can observe the Area of the synthesized macro as well as other statistics generated from Yosys such as the flop ratios. 
+ 
+ <img src="Screenshot/L2_Synthesis_Flop_Ratio.png">  
+ <img src="Screenshot/L2_Area.png">  
+ 
+ Flop ratio observed: 
+ The statistics are available in corresponding directories such as synthesis 
+ <img src="Screenshot/L4_Synthesis_reports.png">  
+ 
+ The mapping is available in mapping file/synthesized netlist as picorv32a.synthesis.v
+  <img src="Screenshot/L4_mapping_done.png">  
+  
+  The STA report is available as 
+  <img src="Screenshot/L4_opensta_timing_report.png">
+      
+    
+    
+
