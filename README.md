@@ -1,20 +1,7 @@
 # opensource_physical_design
 Experience with lab based physical design workshop from vsd
 
-
-# **Open source physical design Day-1**
-This is a repository to share learnings from the extensive and exhaustive workshop ogranized by VSD. 
-
 # **Table of Contents**
-
-# Introdution to ASIC Designing
-
-# Introduction to receipes for ASIC Designing
-
-# Introduction to packaging , components and requirement for digital synthesis
-
-# Setup of Lab environment for exercise and sythesis
-
 
 # OpenSource Physical Design
   This repository contains all the information studied and created during the [Advanced Physical Design Using OpenLANE / SKY130](https://www.vlsisystemdesign.com/advanced-physical-design-using-openlane-sky130/) workshop. It is primarily foucused on a complete RTL2GDS flow using the open-soucre flow named OpenLANE. [PICORV32A](https://github.com/cliffordwolf/picorv32) RISC-V core design is used for the purpose.
@@ -47,18 +34,7 @@ This is a repository to share learnings from the extensive and exhaustive worksh
     - [Cell Design and Characterization Flows](#cell-design-and-characterization-flows)
       - [Cell Design Flow](#cell-design-flow)
       - [Characterization Flow](#characterization-flow)
-  - [Day 3 - Design library cell using Magic Layout and ngspice characterization](#day-3---design-library-cell-using-magic-layout-and-ngspice-characterization)
-    - [CMOS Inverter Design using Magic](#cmos-inverter-design-using-magic)
-    - [Extract SPICE Netlist from Standard Cell Layout](#extract-spice-netlist-from-standard-cell-layout)
-    - [Transient Analysis using NGSPICE](#transient-analysis-using-ngspice)
-  - [Day 4 - Pre-layout timing analysis and importance of good clock tree](#day-4---pre-layout-timing-analysis-and-importance-of-good-clock-tree)
-    - [Magic Layout to Standard Cell LEF](#magic-layout-to-standard-cell-lef)
-    - [Timing Analysis using OpenSTA](#timing-analysis-using-opensta)
-    - [Clock Tree Synthesis using TritonCTS](#clock-tree-synthesis-using-tritoncts)
-  - [Day 5 - Final steps for RTL2GDS](#day-5---final-steps-for-rtl2gds)
-    - [Generation of Power Distribution Network](#generation-of-power-distribution-network)
-    - [Routing using TritonRoute](#routing-using-tritonroute)
-    - [SPEF File Generation](#spef-file-generation)
+  
   - [References](#references)
   - [Acknowledgement](#acknowledgement)
  
@@ -188,6 +164,65 @@ The mapping is available in mapping file/synthesized netlist as picorv32a.synthe
 The STA report is available as 
   <img src="Screenshot/L4_opensta_timing_report.png">
       
+ 
+# Day 2 - Good floorplan vs bad floorplan and introduction to library cells
+ ## Chip Floorplanning
+   Chip Floorplanning is the arrangement of logical block, library cells, pins on silicon chip. It makes sure that every module has been assigned an appropriate area and aspect ratio, every pin of the module has connection with other modules or periphery of the chip and modules are arranged in a way such that it consumes lesser area on a chip.
+   
+ ### Utilization Factor and Aspect Ratio
+   Utilization Factor is ratio of the area of core used by standard cells to the total core area. The utilization factor is generally kept in the range of 0.5-0.7 i.e. 50% - 60%. Maintaining a proper utilization factor facilitates placement and routing optimization.
+   
+ ### Power Planning
+   Power planning is a step in which power grid network is created to distribute power to each part of the design equally. This step deals with the unwanted voltage drop and ground bounce. Steady state IR Drop is caused by the resistance of the metal wires comprising the power distribution network. By reducing the voltage difference between local power and ground, steady-state IR Drop reduces both the speed and noise immunity of the local cells and macros.
+   
+ ### Pin Placement
+   Pin placement is a important part of floorplanning as the timing delays and number of buffers required is dependent on the position of the pin. There are multiple pin placement option available such as equidistant placement, high-density placement.
+ 
+ ### Floorplan using OpenLANE
+   Floorplanning in OpenLANE is done using the following command. 
+    
+    ```run_floorplan```
+  
+ Successful floorplanning gives a `def` (**design-exchange-format**) file as output. This file contains the die area and placement of standard cells.
+    <img src="Screenshot/L2_S5_DesignExchangeFormat_output_2.jpg">
+  
+  ### Review Floorplan Layout in Magic
+   Magic Layout Tool is used for visualizing the layout after floorplan. In order to view floorplan in Magic, following three files are required:
+    1. Technology File (`sky130A.tech`)
+    2. Merged LEF file (`merged.lef`)
+    3. DEF File
     
     
+ <img src="Screenshot/L6_Open_Layout.jpg">
+ 
+## Placement
 
+     - Bind Netlist with physical cells
+     - Place into floor plan
+     - Optimize Placement
+     - Final Placement Optimzation
+  
+Run placement by firing the command below:
+ 
+ ```run_placement```
+
+After successful placement with zero legalizations , you would want to look a the layout file in magic. So we invoke magic by the command below incorporating the tech file, merged lef file and the successfully generated placement file. 
+ 
+ ```magic -T ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &```
+ 
+The layout pops up as seen in the image below
+ 
+<img src="Screenshot/Placement_def.jpg">
+ 
+All the standard cells are placed in the standard cell rows.  There are no DRCs. Floorplan ensured that there are decaps at the boundaries of standard cells, TAP cells are , IO pads are correctly placed. 
+
+#TODO: Need to floorplan and placement switches. 
+
+Power distribution network is not created duirng the floorplan in openlane flow. So the floorplan doesn't crate it but post floorplan and CTS will generate the PDN genration before the routing. 
+
+  
+### Need for Library Characterization
+
+     
+    
+    
