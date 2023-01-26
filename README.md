@@ -144,7 +144,7 @@ The first step in OpenLANE flow is RTL Synthesis of the design selected from the
    
     ```run_synthesis```
    
- <img src="Screenshot/L1_S4_Synthesis_Complete.JPG">
+ <img src="Screenshot/L1_S4_Synthesis_Complete.png">
  
  Results are populated in the runs folder. 
  From the synthesis you can observe the Area of the synthesized macro as well as other statistics generated from Yosys such as the flop ratios. 
