@@ -250,5 +250,12 @@ For all designs to have a systematic approach, the building blocks are placed in
 <img src="Screenshot/Open_Inverter_Layout.jpg">
 
   2. Explore the standard cell layout cloned from the [repository](https://github.com/nickson-jose/vsdstdcelldesign#standard-cell-layout-design-in-magic)
-  3. 
+     2.1 The lef(frameview) protects the commercial information contained within the IP. 
+  3. Next extact the netlist to characterize the cell. 
+     3.1. The parasitics are extracted using the set of three comands to first create extracted file and then extract the parasitics from extrcted file to create the spice netlist. 
+<img src="Screenshot/Extract_parasitics.jpg"> 
+  4. Next the testbench is created for the inverter uisng a pulse to characterize followed by simulating the transient behavour of the circuit in ngspice.
+     4.1  <img src="Screenshot/test_bench_with_model_files.jpg"> 
+     4.2  <img src="Screenshot/run_spice_sim_with_pulse_testbench.jpg"> 
+     5.
   
