@@ -249,4 +249,6 @@ For all designs to have a systematic approach, the building blocks are placed in
   
 <img src="Screenshot/Open_Inverter_Layout.jpg">
 
+  2. Explore the standard cell layout cloned from the [repository](https://github.com/nickson-jose/vsdstdcelldesign#standard-cell-layout-design-in-magic)
+  3. 
   
