@@ -1,5 +1,5 @@
 # opensource_physical_design
-Experience with lab based physical design workshop from vsd
+Learning with lab based physical design workshop organized by VSD. 
 
 # **Table of Contents**
 
