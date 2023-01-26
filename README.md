@@ -229,8 +229,9 @@ For all designs to have a systematic approach, the building blocks are placed in
 2. Design Steps
     1. circuit design to implement the function .  
     2. layout design from the CDL file to determine a stick diagram using Euler path to hand drawn layout using Magic based on WxH requirements
-3. Output and Characteriztion report:
-    1. timing, noise, power libraries generated as  .lib file 
-     
+3. Output and Characteriztion report step generates .lib files for each of the timing, noise and power characterization steps.
+    1. Timing, 
+    2. noise, 
+    3. power
     
     
