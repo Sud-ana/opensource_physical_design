@@ -87,7 +87,7 @@ Superconsise list:
   - Core: It is the actual area of the IC where the logic resides.
   - Pads: These are the interfaces between the internal signals of a chip and the external pins
 
-<img src="Screenshot/IC_Package.jpg">
+<img src="Screenshot/IC_Terminology.jpg">
 
 
  ## Open-Source EDA Tools
