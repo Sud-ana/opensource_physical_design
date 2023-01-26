@@ -225,12 +225,12 @@ Power distribution network is not created duirng the floorplan in openlane flow.
 
 For all designs to have a systematic approach, the building blocks are placed into library components. The standard cell library have views that determine the identity of the cell such as timing, threshold voltage, drive strength etc. To include a cell into the library, it needs to be well defined, which necessitates the process of characterizing and extracting the elements behaviour. The input to the step is PDK, DRC, LVS and spice files while the output is a CDL (circuit description language ) file as well as characterization report. 
 
-1. Inputs: Based on user defined specifications and decision determines the metal layer, pin location, sizes. etc. 
+1. Inputs: Based on user defined specifications and decision determines the metal layer, pin location, sizes, spice file. 
 2. Design Steps
-  1. circuit design to implement the function .  
-  2. layout design from the CDL file to determine a stick diagram using Euler path to hand drawn layout using Magic based on WxH requirements
+    1. circuit design to implement the function .  
+    2. layout design from the CDL file to determine a stick diagram using Euler path to hand drawn layout using Magic based on WxH requirements
 3. Output and Characteriztion report:
-  1. timing, noise, power, .libs, function
+    1. timing, noise, power libraries generated as  .lib file 
      
     
     
