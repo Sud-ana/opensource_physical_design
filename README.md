@@ -235,3 +235,18 @@ For all designs to have a systematic approach, the building blocks are placed in
     3. power
     
     
+  #Characterization Flow
+  
+  ## Inverter Cell View
+  
+  1. Open the inverter cell to view the layout using magic command below. The tech file is required to open the layout and could therefore be copied over to the repositry.
+ 
+``` 
+  git clone https://github.com/nickson-jose/vsdstdcelldesign.git  #In openane working dir
+  cp ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech .
+  magic -T ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech  read sky130_inv.mag &
+  ```
+  
+<img src="Screenshot/Open_Inverter_Layout.jpg">
+
+  
