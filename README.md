@@ -261,3 +261,12 @@ For all designs to have a systematic approach, the building blocks are placed in
      5.1. Observe the different delays from waveform viewer <img src="Screenshot/Delays_observed_from_waveform_viewer.jpg">
   6. 
   
+  
+ # Plug in custom cell into design
+    1. Extract LEF from the custom cell.
+        1.1 Use magic command %lef write <filename> to do so.
+    2  Plug LEF file into the picorv32a design.
+        2.1 Move the lef file into src design directory.
+    3. Open the Openlane Place-and-route tool and configure the TCL files to run synthesis with the LEF file
+    4. 
+  
