@@ -257,9 +257,9 @@ For all designs to have a systematic approach, the building blocks are placed in
   4. Next the testbench is created for the inverter uisng a pulse to characterize followed by simulating the transient behavour of the circuit in ngspice.
      4.1  <img src="Screenshot/test_bench_with_model_files.jpg"> 
      4.2  <img src="Screenshot/run_spice_sim_with_pulse_testbench.jpg"> 
-  5. The spice simulation deck needs to be characterized for the different timing paramters and create a timing library.
+  5. The spice simulation deck needs to be characterized for the different timing paramters and create a timing library. **ERROR: Spice netlist couldn't be run **
      5.1. Observe the different delays from waveform viewer <img src="Screenshot/Delays_observed_from_waveform_viewer.jpg">
-  6. 
+     5.2.
   
   
  # Plug in custom cell into design
@@ -270,4 +270,5 @@ For all designs to have a systematic approach, the building blocks are placed in
     3. Open the Openlane Place-and-route tool and configure the TCL files to run synthesis with the LEF file
         3.1. This is done by directing the LIB_SYNTH switch in the config.tcl file for abc mapping the synthesis.
         3.2  Next is to run the design preparation and synthesis with this LEF file 
+        <img src="Screenshot/custom_std_cell_unused.jpg"> 
   
