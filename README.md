@@ -274,7 +274,7 @@ For all designs to have a systematic approach, the building blocks are placed in
   
   At the end of the synthesis, one should be able to interpret the setup and hold violations observed.
   
-  # Perform Timing analysis in OpenSTA with custom cell  TODO
+  # Perform Timing analysis in OpenSTA with custom cell #TODO
 
 The objective of this step is to anlaysis the setup and hold violations and fine tune the configuraiton (through config.tcl) switches to perform timing analysis on the synthesiszed design using the custom logic cell from the earlier step. 
      
@@ -284,4 +284,4 @@ The objective of this step is to anlaysis the setup and hold violations and fine
    4. Run iterative flow to identify worst case delay paths and update the input slew and output load for reducing the slack
    5.
     
-  
+ # 
