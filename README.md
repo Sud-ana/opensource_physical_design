@@ -270,7 +270,6 @@ For all designs to have a systematic approach, the building blocks are placed in
     3. Open the Openlane Place-and-route tool and configure the TCL files to run synthesis with the LEF file
         3.1. This is done by directing the LIB_SYNTH switch in the config.tcl file for abc mapping the synthesis.
         3.2  Next is to run the design preparation and synthesis with this LEF file 
-  <img src="Screenshot/Port_Labels.jpg"> 
   <img src="Screenshot/Port_class_definitions.jpg"> 
   <img src="Screenshot/custom_lef_file_generated.jpg"> 
   <img src="Screenshot/Custom_lef_file.jpg"> 
