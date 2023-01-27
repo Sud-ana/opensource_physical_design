@@ -262,7 +262,7 @@ For all designs to have a systematic approach, the building blocks are placed in
      5.2.
   
   
- # Plug in custom cell into design
+ # Plug in custom cell into design TODO
     1. Extract LEF from the custom cell.
         1.1 Use magic command %lef write <filename> to do so.
     2  Plug LEF file into the picorv32a design.
@@ -274,9 +274,11 @@ For all designs to have a systematic approach, the building blocks are placed in
   
   At the end of the synthesis, one should be able to interpret the setup and hold violations observed.
   
-  # Perform Timing analysis in OpenSTA
+  # Perform Timing analysis in OpenSTA TODO
      The objective of this step is to anlaysis the setup and hold violations and fine tune the configuraiton (through config.tcl) switches to perform timing analysis on the synthesiszed design using the custom logic cell from the earlier step. 
      
-   #
+   1. Get the timing report to understand which cells/connections have maximum setup and hold slacks.
+   2. Replace the cell by larger area instance to reduce the delay or reduce the fanout. The delay is a function of input slew and output load. 
+   3. Regenerate the report to get the worst path.
     
   
