@@ -82,14 +82,14 @@ Superconsise list:
 * prep -design picorv32a
 * run_synthesis
 * run_floorplan
-*   init_floorplan
-*   place_io
-*   global_placement_or
-*   detailed_placement
-*   tap_decap_or
-*   detailed_placement
-*   gen_pdn
-*   run_routing
+  *   init_floorplan
+  *   place_io
+  *   global_placement_or
+  *   detailed_placement
+  *   tap_decap_or
+  *   detailed_placement
+  *   gen_pdn
+  *   run_routing
 * run_placement
 
 
