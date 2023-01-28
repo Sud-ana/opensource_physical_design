@@ -81,7 +81,18 @@ Superconsise list:
 * package require openlane 0.9
 * prep -design picorv32a
 * run_synthesis
-* 
+* run_floorplan
+*   init_floorplan
+*   place_io
+*   global_placement_or
+*   detailed_placement
+*   tap_decap_or
+*   detailed_placement
+*   gen_pdn
+*   run_routing
+* run_placement
+
+
  ## Basic IC Design Terminologies
   During the Physical Designing, one will come across multiple terminologies that are frequently used. Some of them are mentioned below:
   - Package: It is a case that surrounds the circuit material to protect it from physical damage or corrosion and allow mounting of the electrical contacts connecting it to the printed circuit board (PCB). The below snippet shows an IC with 48 pins and Quad Flat No-Leads(QFN) package.
