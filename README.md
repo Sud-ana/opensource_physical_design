@@ -248,7 +248,7 @@ For all designs to have a systematic approach, the building blocks are placed in
   cp ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech .
   magic -T ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech  read sky130_inv.mag &
   ```
-  
+  A good example of std cell is the github repo by @[Nickson Jose](https://github.com/nickson-jose/vsdstdcelldesign).
 <img src="Screenshot/Open_Inverter_Layout.jpg">
 
   2. Explore the standard cell layout cloned from the [repository](https://github.com/nickson-jose/vsdstdcelldesign#standard-cell-layout-design-in-magic)
