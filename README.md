@@ -37,7 +37,7 @@ Learning with lab based physical design workshop organized by VSD.
   -  [Day 3 - Characterization of library cells](#Need-for-Library-Characterization)
   -  [Perform Timing analysis in OpenSTA with custom cell](#Perform-Timing-analysis-in-OpenSTA-with-custom-cell)
   
-  - [References](#references)
+  - [References](#References)
   - [Acknowledgement](#Acknowledgements-and-credits)
  
 # Introduction To RTL to GDSII Flow
@@ -291,7 +291,7 @@ The objective of this step is to anlaysis the setup and hold violations and fine
    4. Run iterative flow to identify worst case delay paths and update the input slew and output load for reducing the slack
    5.
  
- # Reference
+ # References
  1. [Angelo Jacob's Github repo](https://github.com/AngeloJacobo/OpenLANE-Sky130-Physical-Design-Workshop/blob/main/README.md)
 
 
