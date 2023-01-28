@@ -302,6 +302,9 @@ The objective of this step is to anlaysis the setup and hold violations and fine
    4. Run iterative flow to identify worst case delay paths and update the input slew and output load for reducing the slack
    5.
  
+ # CTS
+ After placement run, the clock tree synthesis is initiated to add clock buffers to the path. This will generate a net netlist with the added buffers. 
+ 
  # References
  1. [Angelo Jacob's Github repo](https://github.com/AngeloJacobo/OpenLANE-Sky130-Physical-Design-Workshop/blob/main/README.md)
 
