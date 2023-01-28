@@ -274,7 +274,8 @@ For all designs to have a systematic approach, the building blocks are placed in
   <img src="Screenshot/custom_lef_file_generated.jpg"> 
   <img src="Screenshot/Custom_lef_file.jpg"> 
   
-  At the end of the synthesis, one should be able to interpret the setup and hold violations observed.
+  At the end of the synthesis, one should be able to interpret the setup and hold violations observed as 639 and 22ns. 
+  <img src="Screenshot/Synthesis_mapping_with_custom_cell.jpg">
   
   # Perform Timing analysis in OpenSTA with custom cell #TODO
 
