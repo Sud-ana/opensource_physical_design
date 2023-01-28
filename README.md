@@ -35,6 +35,7 @@ Learning with lab based physical design workshop organized by VSD.
       - [Cell Design Flow](#cell-design-flow)
       - [Characterization Flow](#characterization-flow)
   -  [Day 3 - Characterization of library cells](#Need-for-Library-Characterization)
+  -  [Perform Timing analysis in OpenSTA with custom cell](#Perform-Timing-analysis-in-OpenSTA-with-custom-cell)
   
   - [References](#references)
   - [Acknowledgement](#acknowledgement)
