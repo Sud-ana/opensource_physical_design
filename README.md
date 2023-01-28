@@ -38,7 +38,7 @@ Learning with lab based physical design workshop organized by VSD.
   -  [Perform Timing analysis in OpenSTA with custom cell](#Perform-Timing-analysis-in-OpenSTA-with-custom-cell)
   
   - [References](#references)
-  - [Acknowledgement](#acknowledgement)
+  - [Acknowledgement](#Acknowledgements-and-credits: )
  
 # Introduction To RTL to GDSII Flow
   RTL to GDSII Flow refers to the all the steps involved in converting a logical Register Transfer Level(RTL) Design to a fabrication ready GDSII format. GDSII is a database file format which is an industry standard for data exchange of IC layout artwork.
@@ -291,4 +291,6 @@ The objective of this step is to anlaysis the setup and hold violations and fine
    4. Run iterative flow to identify worst case delay paths and update the input slew and output load for reducing the slack
    5.
     
- # 
+ # Acknowledgements and credits: 
+ - [Kunal Ghosh - Co-founder of VSD](https://www.udemy.com/user/anagha/)
+ - [Nickson Jose - Workshop Instructor](https://www.udemy.com/user/nickson-jose/)
