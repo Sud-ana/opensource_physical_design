@@ -262,7 +262,7 @@ For all designs to have a systematic approach, the building blocks are placed in
      5.2.
   
   
- # Plug-in  Inverter custom cell into design #TODO
+ # Plug-in  Inverter custom cell into design
     1. Extract LEF from the custom cell.
         1.1 Use magic command %lef write <filename> to do so.
     2  Plug LEF file into the picorv32a design.
