@@ -274,8 +274,10 @@ For all designs to have a systematic approach, the building blocks are placed in
   <img src="Screenshot/custom_lef_file_generated.jpg"> 
   <img src="Screenshot/Custom_lef_file.jpg"> 
   
-  At the end of the synthesis, one should be able to interpret the setup and hold violations observed as 639 and 22ns. 
+  At the end of the synthesis, one should be able to interpret the setup and hold violations observed as 639 and 22ns.  There are 1554 instances of the custom cell library. 
+  
   <img src="Screenshot/Synthesis_mapping_with_custom_cell.jpg">
+  <img src="Screenshot/custom_cell_instance_in_synthesis.jpg">
   
   # Perform Timing analysis in OpenSTA with custom cell #TODO
 
