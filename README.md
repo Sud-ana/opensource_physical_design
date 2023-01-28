@@ -34,6 +34,7 @@ Learning with lab based physical design workshop organized by VSD.
     - [Cell Design and Characterization Flows](#cell-design-and-characterization-flows)
       - [Cell Design Flow](#cell-design-flow)
       - [Characterization Flow](#characterization-flow)
+  -  [Day 3 - Characterization of library cells](#Need for Library Characterization)
   
   - [References](#references)
   - [Acknowledgement](#acknowledgement)
@@ -235,7 +236,7 @@ For all designs to have a systematic approach, the building blocks are placed in
     3. power
     
     
-  #Characterization Flow
+  # Characterization Flow-
   
   ## Inverter Cell Overview: Used as custom standard cell in the design
   
