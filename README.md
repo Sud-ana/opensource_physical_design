@@ -290,7 +290,11 @@ The objective of this step is to anlaysis the setup and hold violations and fine
    3. Regenerate the report to get the worst path.
    4. Run iterative flow to identify worst case delay paths and update the input slew and output load for reducing the slack
    5.
-    
+ 
+ # Reference
+ 1. [Angelo Jacob's Github repo](https://github.com/AngeloJacobo/OpenLANE-Sky130-Physical-Design-Workshop/blob/main/README.md)
+
+
  # Acknowledgements and credits
  - [Kunal Ghosh - Co-founder of VSD](https://www.udemy.com/user/anagha/)
  - [Nickson Jose - Workshop Instructor](https://www.udemy.com/user/nickson-jose/)
