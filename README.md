@@ -261,7 +261,7 @@ For all designs to have a systematic approach, the building blocks are placed in
      4.2  <img src="Screenshot/run_spice_sim_with_pulse_testbench.jpg"> 
   5. The spice simulation deck needs to be characterized for the different timing paramters and create a timing library. **ERROR: Spice netlist couldn't be run **
      5.1. Observe the different delays from waveform viewer <img src="Screenshot/Delays_observed_from_waveform_viewer.jpg">
-     5.2.
+     5.2. <img src="Screenshot/Spice_sim_std_cell.jpg">
   
   
  # Plug-in  Inverter custom cell into design
