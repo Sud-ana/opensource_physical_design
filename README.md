@@ -7,7 +7,7 @@ Learning with lab based physical design workshop organized by VSD.
   This repository contains all the information studied and created during the [Advanced Physical Design Using OpenLANE / SKY130](https://www.vlsisystemdesign.com/advanced-physical-design-using-openlane-sky130/) workshop. It is primarily foucused on a complete RTL2GDS flow using the open-soucre flow named OpenLANE. [PICORV32A](https://github.com/cliffordwolf/picorv32) RISC-V core design is used for the purpose.
 
 # Table of Contents
-  - [Introduction To RTL to GDSII Flow](#introduction-to-rtl-to-gdsii-flow)
+  - [Introduction To RTL to GDSII-Flow](#introduction-to-rtl-to-gdsii-flow)
   - [About Google SkyWater PDK](#about-google-skywater-pdk)
   - [List of All Open-Source Tools Used](#list-of-all-open-source-tools-used)
   - [Setting Up Environment](#setting-up-environment)
@@ -34,7 +34,7 @@ Learning with lab based physical design workshop organized by VSD.
     - [Cell Design and Characterization Flows](#cell-design-and-characterization-flows)
       - [Cell Design Flow](#cell-design-flow)
       - [Characterization Flow](#characterization-flow)
-  -  [Day 3 - Characterization of library cells](#Need for Library Characterization)
+  -  [Day 3 - Characterization of library cells](#Need-for-Library-Characterization)
   
   - [References](#references)
   - [Acknowledgement](#acknowledgement)
