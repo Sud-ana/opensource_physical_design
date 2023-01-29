@@ -354,6 +354,8 @@ The layout of the design post placement.
 <img src="Screenshot/placement_floor_plan.jpg">
 
 
+It's great to see the instance of the inverter introduced in the layout. 
+<img src="Screenshot/Inverter_instance.jpg">
 
 
 
