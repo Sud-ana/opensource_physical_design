@@ -300,7 +300,33 @@ Verify that the tracks is located in a way such that ports of hte lef file lies 
   <img src="Screenshot/Synthesis_mapping_with_custom_cell.jpg">
   <img src="Screenshot/custom_cell_instance_in_synthesis.jpg">
   
-  # Perform Timing analysis in OpenSTA with custom cell #TODO
+  # Perform Timing analysis in OpenSTA with custom cell 
+So inorder to use the custom sky130_vsd inverter lef file in the design, we want to configure the config.tcl file to map the custom cell into the design from synthesis stage.  This is done by the config.tcl file. 
+
+<img src="Screenshot/config_tcl_vsdinv.jpg">
+Then we want to do synthesis with the new configuration. So we start openlane again in the same directory by overwriting the existing design prepration directory. 
+<img src="Screenshot/design_preparation_picorv32a_overwrite.jpg">
+
+Then we add the following two commands
+``` 
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs```
+
+This is followed by synthesis to start the mapping of the custom lef into the synthesis. 
+
+<img src="Screenshot/mapping_with_custom_cell\additional_lef_run_synthesis.jpg">
+
+
+
+
+
+
+
+
+
+
+
+
 
 The objective of this step is to anlaysis the setup and hold violations and fine tune the configuraiton (through config.tcl) switches to perform timing analysis on the synthesiszed design using the custom logic cell from the earlier step. 
      
