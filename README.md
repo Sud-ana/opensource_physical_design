@@ -305,6 +305,16 @@ The objective of this step is to anlaysis the setup and hold violations and fine
  # CTS
  After placement run, the clock tree synthesis is initiated to add clock buffers to the path. This will generate a net netlist with the added buffers. 
  
+ Start CTS run
+ <img src="Screenshot/run_cts.jpg"> 
+ 
+ Reference to CTS PROC. 
+ <img src="Screenshot/1_run_cts_proc.jpg"> 
+
+ CTS completed successfully
+ <img src="Screenshot/cts_successful.jpg"> 
+ 
+ 
  # References
  1. [Angelo Jacob's Github repo](https://github.com/AngeloJacobo/OpenLANE-Sky130-Physical-Design-Workshop/blob/main/README.md)
 
