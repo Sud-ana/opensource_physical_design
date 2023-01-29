@@ -332,7 +332,12 @@ The objective of this step is to anlaysis the setup and hold violations and fine
  <img src="Screenshot/timing_fail_post_cts.jpg">
  
  # PDN
- We plan to do the power distribution network (power and ground rails). This is done in openlane. 
+ We plan to do the power distribution network (power and ground rails). This is done in openlane. This consists of two steps 
+ * Power Distribution Network
+ * Routing
+   * Local Routing
+   * Global Routing
+ There are various swtiches available which ensure the algorithms are implemented for optimized routing. 
  
  1. Initialize openlane and prep the design repository until the CTS state by using tags. 
  2. Check the last run was CTS by using a def check ``` echo $::env(CURRENT_DEF)```
@@ -340,6 +345,7 @@ The objective of this step is to anlaysis the setup and hold violations and fine
  3. Then initiate the pdn by gen_pdn. 
  4. This is followed by routing step.
  
+ # 
  # References
  1. [Angelo Jacob's Github repo](https://github.com/AngeloJacobo/OpenLANE-Sky130-Physical-Design-Workshop/blob/main/README.md)
 
