@@ -320,6 +320,9 @@ The objective of this step is to anlaysis the setup and hold violations and fine
  <img src="Screenshot/launch_openroad.jpg">
  
  <img src="Screenshot/launch_openroad.2_read_lef_def_filejpg">
+ <img src="Screenshot/open_road_read_lef_def.jpg">
+ <img src="Screenshot/synthesis_sdc_file.jpg">
+ 
  
  
  
