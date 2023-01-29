@@ -350,7 +350,8 @@ detailed_placement
 gen_pdn
 
 ```
-
+The layout of the design post placement. 
+<img src="Screenshot/placement_floor_plan.jpg">
 
 
 
