@@ -314,6 +314,12 @@ The objective of this step is to anlaysis the setup and hold violations and fine
  CTS completed successfully
  <img src="Screenshot/cts_successful.jpg"> 
  
+ # STA 
+ We use the integrated OpenRoad project to perform STA within openlane. The main benefit is that the environment can use the same environment variables as the openlane. 
+ 
+ <img src="Screenshot/launch_openroad.jpg">
+ 
+ 
  
  # References
  1. [Angelo Jacob's Github repo](https://github.com/AngeloJacobo/OpenLANE-Sky130-Physical-Design-Workshop/blob/main/README.md)
