@@ -336,6 +336,13 @@ Check the merged lef to check that the inverter macro is included in the synthes
 <img src="Screenshot/mapping_with_custom_cell\marco_inv_merged_lef.jpg">
 
 
+After experimenting with different synthesis strategies, check when the slack drops to 0. *For me changing the synthesis strategies didn't help*
+
+So we proceed to floorplan with set of atomic steps instead of `run_floorplan` as there are errors.
+<img src="Screenshot/init_floorplan.jpg">
+
+
+
 
 
 
