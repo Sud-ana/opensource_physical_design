@@ -319,6 +319,8 @@ The objective of this step is to anlaysis the setup and hold violations and fine
  
  <img src="Screenshot/launch_openroad.jpg">
  
+ <img src="Screenshot/launch_openroad.2_read_lef_def_filejpg">
+ 
  
  
  # References
