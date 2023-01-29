@@ -321,6 +321,18 @@ As the synthesis is successful, we can start checking the reports to see 1554 in
 
 <img src="Screenshot/custom_cell_mapped.jpg">
 
+As can be also observed, there is a large slack violation which needs to be corrected. 
+
+<img src="Screenshot/slack_violation_post_mapping.jpg">
+
+We shall use the concept of delay tables to mitigate the slack violations.  We try to figure out where the delay is building up from the report. 
+wns is worst slack that gets reported.  (tns : total negative slack)
+CONFIGURATIONS CAN BE CHANGED ON THE FLY.  SO WE CHECK STRATEGIES AND CANGE A SYNTHESIS STRATEGY TO
+* BALANCE AREA AND SPEED/TIMING.
+* CHECK INPUT CELL BUFFERING
+* CHECK CELL SIZING
+<img src="Screenshot/synthesis_strategy_change_for_reducing_slack.jpg">
+
 
 
 
