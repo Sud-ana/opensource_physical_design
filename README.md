@@ -336,6 +336,7 @@ The objective of this step is to anlaysis the setup and hold violations and fine
  
  1. Initialize openlane and prep the design repository until the CTS state by using tags. 
  2. Check the last run was CTS by using a def check ``` echo $::env(CURRENT_DEF)```
+ <img src="Screenshot/enter_openlane_and_check_def.jpg">
  3. Then initiate the pdn by gen_pdn. 
  4. This is followed by routing step.
  
