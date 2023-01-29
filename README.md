@@ -323,6 +323,9 @@ The objective of this step is to anlaysis the setup and hold violations and fine
  <img src="Screenshot/open_road_read_lef_def.jpg">
  <img src="Screenshot/synthesis_sdc_file.jpg">
  
+ Using the default sdc constraint file for STA post CTS. This needs to be updated to the driving cell and actual load. 
+ <img src="Screenshot/clock_constraints.jpg">
+ <img src="Screenshot/clock_constraints_file.jpg">
  
  
  
