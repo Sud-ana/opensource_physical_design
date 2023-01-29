@@ -340,15 +340,16 @@ After experimenting with different synthesis strategies, check when the slack dr
 
 So we proceed to floorplan with set of atomic steps instead of `run_floorplan` as there are errors.
 <img src="Screenshot/init_floorplan.jpg">
+```
+init_floorplan
+place_io
+global_placement_or
+detailed_placement
+tap_decap_or
+detailed_placement
+gen_pdn
 
-
-
-
-
-
-
-
-
+```
 
 
 
