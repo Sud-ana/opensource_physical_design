@@ -246,7 +246,8 @@ For all designs to have a systematic approach, the building blocks are placed in
     1. Timing, 
     2. noise, 
     3. power
-    
+ 4. Extract the lef file to use as standard cell in the design. 
+ <img src="Screenshot/7_cell_characterization_2.jpg">
     
   # Characterization Flow-
   
