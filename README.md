@@ -274,9 +274,13 @@ For all designs to have a systematic approach, the building blocks are placed in
   5. The spice simulation deck needs to be characterized for the different timing paramters and create a timing library. **ERROR: Spice netlist couldn't be run **
      5.1. Observe the different delays from waveform viewer <img src="Screenshot/Delays_observed_from_waveform_viewer.jpg">
      5.2. <img src="Screenshot/Spice_sim_std_cell.jpg">
+   
   
   
  # Plug-in  Inverter custom cell into design
+ The first step is to verify that the tracks is located in a way such that ports of hte lef file lies on it. This is done visually by building up a convergence using the pitch and offset from tracks file into the layout file 
+ <img src="Screenshot/8_convergence_tracks_ports_for_LEF.jpg">
+ 
     1. Extract LEF from the custom cell.
         1.1 Use magic command %lef write <filename> to do so.
     2  Plug LEF file into the picorv32a design.
