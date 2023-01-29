@@ -310,11 +310,17 @@ Then we want to do synthesis with the new configuration. So we start openlane ag
 Then we add the following two commands
 ``` 
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
-add_lefs -src $lefs```
+add_lefs -src $lefs
+```
 
 This is followed by synthesis to start the mapping of the custom lef into the synthesis. 
 
-<img src="Screenshot/mapping_with_custom_cell\additional_lef_run_synthesis.jpg">
+<img src="Screenshot/additional_lef_run_synthesis.jpg">
+
+As the synthesis is successful, we can start checking the reports to see 1554 instances of the custom cell instance is plugged into the design. 
+
+<img src="Screenshot/custom_cell_mapped.jpg">
+
 
 
 
