@@ -327,6 +327,8 @@ The objective of this step is to anlaysis the setup and hold violations and fine
  <img src="Screenshot/clock_constraints.jpg">
  <img src="Screenshot/clock_constraints_file.jpg">
  
+ As the inverter cell is not inserted and no effort was made to meet timing, slack is violated in post CTS STA. 
+ <img src="Screenshot/timing_fail_post_cts.jpg">
  
  
  # References
