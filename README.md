@@ -354,7 +354,7 @@ The layout of the design post placement.
 <img src="Screenshot/placement_floor_plan.jpg">
 
 
-It's great to see the instance of the inverter introduced in the layout. 
+It's great to see the instance of the inverter introduced in the layout.  Due to abuttment, the adjoining standard cells are all placed overlapping due to the power and ground rails overlapping. The layout is viewed using ```expand``` command in magic.
 <img src="Screenshot/Inverter_instance.jpg">
 
 
