@@ -36,7 +36,8 @@ Learning with lab based physical design workshop organized by VSD.
       - [Characterization Flow](#characterization-flow)
   -  [Day 3 - Characterization of library cells](#Need-for-Library-Characterization)
   -  [Perform Timing analysis in OpenSTA with custom cell](#Perform-Timing-analysis-in-OpenSTA-with-custom-cell)
-  
+  -  [Clock Tree Synthesis CTS](#CTS)
+  -  [Final GDSII generation](#Final-GDSII)  
   - [References](#References)
   - [Acknowledgement](#Acknowledgements-and-credits)
  
@@ -410,13 +411,20 @@ After placement run, the clock tree synthesis is initiated to add clock buffers 
  1. Initialize openlane and prep the design repository until the CTS state by using tags. 
  2. Check the last run was CTS by using a def check ``` echo $::env(CURRENT_DEF)```
  <img src="Screenshot/enter_openlane_and_check_def.jpg">
- 3. Then initiate the pdn by gen_pdn. 
- 4. This is followed by routing step.
+ 3. Then initiate the power delivery network pdn flow by ```gen_pdn``` 
+ 4. This is followed by routing step flow by firing ```run_routing```
 
+<img src="Screenshot/routing_completed.jpg">
  
  # Final GDSII
+ The final gds file is generated from the run_routing step and observed through the pictures below. There wasn't time to close the timing delays, so the total negative slack is non-zero for this GDSII generation. So this is unacceptable for manufacturing point of view but was a good first pass learning as an introductory workshop for physical design.
  
+ <img src="Screenshot/top_cell_design.jpg">
  
+ Zoomed in section with fillter cells and power-grid.
+ <img src="Screenshot/zoomed_in_pdn.jpg">
+ 
+  
  # References
  1. [Angelo Jacob's Github repo](https://github.com/AngeloJacobo/OpenLANE-Sky130-Physical-Design-Workshop/blob/main/README.md)
 
