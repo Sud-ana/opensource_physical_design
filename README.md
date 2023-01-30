@@ -365,10 +365,9 @@ The objective of this step is to anlaysis the setup and hold violations and fine
    2. Replace the cell by larger area instance to reduce the delay or reduce the fanout. The delay is a function of input slew and output load. 
    3. Regenerate the report to get the worst path.
    4. Run iterative flow to identify worst case delay paths and update the input slew and output load for reducing the slack
-   5.
  
  # CTS
- After placement run, the clock tree synthesis is initiated to add clock buffers to the path. This will generate a net netlist with the added buffers. 
+After placement run, the clock tree synthesis is initiated to add clock buffers to the path. This will generate a net netlist with the added buffers.  This flow uses TritonCTS
  
  Start CTS run
  <img src="Screenshot/run_cts.jpg"> 
@@ -393,8 +392,9 @@ The objective of this step is to anlaysis the setup and hold violations and fine
  <img src="Screenshot/clock_constraints.jpg">
  <img src="Screenshot/clock_constraints_file.jpg">
  
- As the inverter cell is not inserted and no effort was made to meet timing, slack is violated in post CTS STA. 
+ In a second synthesis flow, as the inverter cell is not inserted and no effort was made to meet timing, slack is violated in post CTS STA. 
  <img src="Screenshot/timing_fail_post_cts.jpg">
+ This slack needs to be adequately addressed and closed with ECO prior to proceeding for generating the power delivery networks and GDS-II generations. 
  
  # PDN
  We plan to do the power distribution network (power and ground rails). This is done in openlane. This consists of two steps 
@@ -409,8 +409,11 @@ The objective of this step is to anlaysis the setup and hold violations and fine
  <img src="Screenshot/enter_openlane_and_check_def.jpg">
  3. Then initiate the pdn by gen_pdn. 
  4. This is followed by routing step.
+
  
- # 
+ # Final GDSII
+ 
+ 
  # References
  1. [Angelo Jacob's Github repo](https://github.com/AngeloJacobo/OpenLANE-Sky130-Physical-Design-Workshop/blob/main/README.md)
 
@@ -419,6 +422,6 @@ The objective of this step is to anlaysis the setup and hold violations and fine
  - [Kunal Ghosh - Co-founder of VSD](https://www.udemy.com/user/anagha/)
  - [Nickson Jose - Workshop Instructor](https://www.udemy.com/user/nickson-jose/)
 
-# 
+# openlane command reference:
 prep -design picorv32a -tag <runs> -overwrite
   
