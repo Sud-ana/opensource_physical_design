@@ -378,6 +378,9 @@ After placement run, the clock tree synthesis is initiated to add clock buffers 
  CTS completed successfully
  <img src="Screenshot/cts_successful.jpg"> 
  
+ Layout in magic post clock tree synthesis.
+ <img src="Screenshot/post_cts_layout.jpg">
+ 
  # STA 
  We use the integrated OpenRoad project to perform STA within openlane. The main benefit is that the environment can use the same environment variables as the openlane. 
  
