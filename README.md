@@ -34,9 +34,10 @@ Learning physical design through open-source toolchain workshop organized by VSD
       - [Cell Design Flow](#cell-design-flow)
       - [Characterization Flow](#characterization-flow)
   -  [Day 3 - Characterization of library cells](#Need-for-Library-Characterization)
-  -  [Perform Timing analysis in OpenSTA with custom cell](#Perform-Timing-analysis-in-OpenSTA-with-custom-cell)
-  -  [Clock Tree Synthesis CTS](#CTS)
-  -  [Final GDSII generation](#Final-GDSII)  
+  -  [Day 4 - Perform Timing analysis in OpenSTA with custom cell](#Perform-Timing-analysis-in-OpenSTA-with-custom-cell)
+  -  [Day 4 - Clock Tree Synthesis CTS](#CTS)
+  -  [Day 5 - Final GDSII generation](#Final-GDSII)  
+  -  [SPEF Extractions](#SPEF-Extraction)
   - [References](#References)
   - [Acknowledgement](#Acknowledgements-and-credits)
  
