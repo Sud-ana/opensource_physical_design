@@ -1,5 +1,4 @@
-# opensource_physical_design
-Learning with lab based physical design workshop organized by VSD. 
+Learning physical design through open-source toolchain workshop organized by VSD. 
 
 # **Table of Contents**
 
