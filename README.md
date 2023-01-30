@@ -423,7 +423,12 @@ After placement run, the clock tree synthesis is initiated to add clock buffers 
  Zoomed in section with fillter cells and power-grid.
  <img src="Screenshot/zoomed_in_pdn.jpg">
  
-  
+ # SPEF Extraction
+ Standard Parasitic Exchange Format (SPEF) is an IEEE standard for representing parasitic data of wires in a chip in ASCII format. Non-ideal wires have parasitic resistance and capacitance that are captured by SPEF. OpenLANE consists of a tool named, *SPEF_EXTRACTOR* for generation of SPEF file. It is a python based parser which takes the LEF and DEF files as input arguments and generates the SPEF file. This is automatically generated post the run_routing routing stage. 
+ 
+ <img src="Screenshot/SPEF_Extracted.jpg">
+ <img src="Screenshot/SPEF_Extracted_2.jpg">
+ 
  # References
  1. [Angelo Jacob's Github repo](https://github.com/AngeloJacobo/OpenLANE-Sky130-Physical-Design-Workshop/blob/main/README.md)
 
