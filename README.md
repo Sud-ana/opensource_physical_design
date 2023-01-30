@@ -333,7 +333,7 @@ CONFIGURATIONS CAN BE CHANGED ON THE FLY.  SO WE CHECK STRATEGIES AND CANGE A SY
 * CHECK CELL SIZING
 <img src="Screenshot/synthesis_strategy_change_for_reducing_slack.jpg">
 Check the merged lef to check that the inverter macro is included in the synthesis. 
-<img src="Screenshot/mapping_with_custom_cell\marco_inv_merged_lef.jpg">
+<img src="Screenshot/marco_inv_merged_lef.jpg">
 
 
 After experimenting with different synthesis strategies, check when the slack drops to 0. *For me changing the synthesis strategies didn't help*
